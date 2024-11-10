@@ -66,6 +66,4 @@ SELECT department, COUNT(*) FROM employees GROUP BY department;
 | HR         | 1        |
 | IT         | 2        |
 
----
-
-These examples show the use of aggregate functions on the `employees` table with example outputs for each command.
+ 
