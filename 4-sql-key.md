@@ -1,4 +1,4 @@
- ### 1. **Primary Key**
+### 1. **Primary Key**
    - **Definition**: A primary key uniquely identifies each record in a table. It cannot contain `NULL` values and must contain unique values.
    - **Example**:
      ```sql
@@ -9,6 +9,7 @@
      );
      ```
    - **Visual**:
+
      | EmployeeID | Name        | Department |
      |------------|-------------|------------|
      | 1          | John Doe    | HR         |
@@ -32,11 +33,14 @@
      ```
    - **Visual**:
      - **Departments Table**:
+
        | DepartmentID | DepartmentName |
        |--------------|----------------|
        | 1            | HR             |
        | 2            | Finance        |
+
      - **Employees Table**:
+
        | EmployeeID | Name        | DepartmentID |
        |------------|-------------|--------------|
        | 1          | John Doe    | 1            |
@@ -53,6 +57,7 @@
      );
      ```
    - **Visual**:
+
      | EmployeeID | Email               | Name        |
      |------------|---------------------|-------------|
      | 1          | john@example.com    | John Doe    |
@@ -70,6 +75,7 @@
      );
      ```
    - **Visual**:
+
      | OrderID | ProductID | Quantity |
      |---------|-----------|----------|
      | 1       | 101       | 5        |
@@ -88,6 +94,7 @@
      );
      ```
    - **Visual**:
+
      | EmployeeID | Email               | PhoneNumber   |
      |------------|---------------------|---------------|
      | 1          | john@example.com    | 123-456-7890  |
@@ -96,27 +103,25 @@
 ### 6. **Alternate Key**
    - **Definition**: An alternate key is any candidate key not chosen as the primary key.
    - **Example**: If `Email` and `PhoneNumber` are candidate keys in the `Employees` table, and `EmployeeID` is the primary key, `Email` and `PhoneNumber` are alternate keys.
- An **Alternate Key** is a candidate key that was not selected as the primary key. In other words, it's an additional column (or set of columns) that could uniquely identify a row in a table but isn't the primary key.
 
-```sql
-CREATE TABLE Employees (
-    EmployeeID INT PRIMARY KEY,
-    Email VARCHAR(50) UNIQUE,
-    PhoneNumber VARCHAR(15),
-    Name VARCHAR(50)
-);
-```
+   - **Example Table**:
+     ```sql
+     CREATE TABLE Employees (
+         EmployeeID INT PRIMARY KEY,
+         Email VARCHAR(50) UNIQUE,
+         PhoneNumber VARCHAR(15),
+         Name VARCHAR(50)
+     );
+     ```
 
-In this case:
-- `EmployeeID` is the **Primary Key**.
-- `Email` is the **Alternate Key** because it uniquely identifies each row but isn’t the primary key.
+   - In this case:
+     - `EmployeeID` is the **Primary Key**.
+     - `Email` is the **Alternate Key** because it uniquely identifies each row but isn’t the primary key.
 
-#### Input Table (Employees Table)
+   - **Input Table (Employees Table)**
 
-| EmployeeID | Email               | PhoneNumber | Name       |
-|------------|----------------------|-------------|------------|
-| 1          | john@example.com     | 123-456-789 | John Doe   |
-| 2          | jane@example.com     | 987-654-321 | Jane Smith |
-| 3          | alex@example.com     | 555-123-456 | Alex Brown |
-
- 
+     | EmployeeID | Email               | PhoneNumber | Name       |
+     |------------|----------------------|-------------|------------|
+     | 1          | john@example.com     | 123-456-789 | John Doe   |
+     | 2          | jane@example.com     | 987-654-321 | Jane Smith |
+     | 3          | alex@example.com     | 555-123-456 | Alex Brown |
