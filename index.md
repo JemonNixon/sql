@@ -14,4 +14,6 @@ Welcome to the SQL Basics Tutorial! This guide is organized into multiple parts 
 8. [Python](7-python.md)
 9. [Git](8-git.md)
 
-Each part includes examples and explanations to make learning SQL easy and comfortable.
+Each part includes examples and explanations
+
+ 
