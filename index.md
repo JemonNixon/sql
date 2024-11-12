@@ -10,5 +10,8 @@ Welcome to the SQL Basics Tutorial! This guide is organized into multiple parts 
 4. [SQL Basics Part 3: Joins, Data Manipulation, and Advanced Clauses](3-basic-sql-part-03.md) 🔗
 5. [SQL Keys: Primary keys and Foreign keys](4-sql-key.md) 🔑
 6. [Insert - Update - Having ](5-insert-update.md)
+7. [Basic RDBMS](6-RDBMS.md)
+8. [Python](7-python.md)
+9. [Git](8-git.md)
 
 Each part includes examples and explanations to make learning SQL easy and comfortable.
